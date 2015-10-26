@@ -1,0 +1,25 @@
+draw_shades no
+update_interval 0.5
+background yes
+alignment bottom
+#cpu_avg_samples 4
+use_xft yes
+xftfont Andale Mono-11
+total_run_times 0
+double_buffer yes
+own_window yes
+own_window_type override
+own_window_transparent yes
+default_bar_size 80 8
+gap_y 30
+gap_x 10
+use_spacer right
+pad_percents 0
+temperature_unit Celsius
+override_utf8_locale yes
+
+TEXT
+\
+${font Andale Mono-40}
+${execp ./tictactoe.py show}
+
