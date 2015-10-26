@@ -2,9 +2,9 @@
 
 For the purpose of demonstrating an interactive conky.
 
-It uses a simple python3 script to get or update the state of the game.
+It uses a simple python3 script to get and update the state of the game.
 
-I recommend i3 for this because it is easy to configure the keymap.
+I recommend i3 for this because it is easy to configure the keymappings.
 But other window mangers would do.
 
 Add this to your i3 config file:
