@@ -1,37 +1,12 @@
-#A simple tic-tac-toe game for Conky
+## Interactiv Conky demos
+These are two examples of how to make conky interactive.
 
-For the purpose of demonstrating an interactive conky.
+The demos use python3 and have instructions for how to setup the keybindings for i3wm.
 
-It uses a simple python3 script to get and update the state of the game.
+###conkygame
+is a simple ASCII conky game where you move a character on a 2D grid.
 
-I recommend i3 for this because it is easy to configure the keymappings.
-But other window mangers would do.
+###tictactoe
+is an implementation of tic-tac-toe in conky.
 
-Add this to your i3 config file:
-
-    set $tictac /path/to/the/tictactoe/folder
-    mode "tictactoe"{
-        bindsym Mod1+1 exec python $tictac/tictactoe.py place 2 0
-        bindsym Mod1+2 exec python $tictac/tictactoe.py place 2 1
-        bindsym Mod1+3 exec python $tictac/tictactoe.py place 2 2
-
-        bindsym Ctrl+1 exec python $tictac/tictactoe.py place 1 0
-        bindsym Ctrl+2 exec python $tictac/tictactoe.py place 1 1
-        bindsym Ctrl+3 exec python $tictac/tictactoe.py place 1 2
-
-        bindsym Shift+1 exec python $tictac/tictactoe.py place 0 0
-        bindsym Shift+2 exec python $tictac/tictactoe.py place 0 1
-        bindsym Shift+3 exec python $tictac/tictactoe.py place 0 2
-
-        bindsym $mod+r exec python $tictac/tictactoe.py new
-                                 
-                                 
-        # exit with esc
-        bindsym Escape exec pkill conky; mode "default"
-    }
-
-    bindsym $mod+Ctrl+g exec cd $tictac && conky -c $tictac/conkyrc; mode "tictactoe"
-
-Go to an empty workspace, press $mod+Ctrl+G and play using Alt (bottom row), Ctrl (middle row), Shift (top row) and 1, 2 and 3 for the columns.
-
-Have a nice day!
+*I hope this will inspire someone to do some really awesome stuff with conky!*
