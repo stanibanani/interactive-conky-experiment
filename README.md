@@ -1,4 +1,4 @@
-## Interactiv Conky demos
+## Interactive Conky demos
 These are two examples of how to make conky interactive.
 
 The demos use python3 and have instructions for how to setup the keybindings for i3wm.
